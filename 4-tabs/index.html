@@ -4,12 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      /* write CSS here */
-    </style>
+    <link rel="stylesheet" href="style.css" />
+
   </head>
-  <body></body>
-  <script>
-    // write javascript here
-  </script>
+  <body>
+  <div class="tabs">
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="showTab(event, 'tab1')">Profile</button>
+        <button class="tab-btn" onclick="showTab(event, 'tab2')">Dashboard</button>
+        <button class="tab-btn" onclick="showTab(event, 'tab3')">Settings</button>
+        <button class="tab-btn" onclick="showTab(event, 'tab4')">Contacts</button>
+      </div>
+    
+      <div id="tab1" class="tab-content active">
+        <h2>Content for Tab 1</h2>
+        <p>This is Tab 1 content.</p>
+      </div>
+    
+      <div id="tab2" class="tab-content">
+        <h2>Content for Tab 2</h2>
+        <p>This is Tab 2 content.</p>
+      </div>
+    
+      <div id="tab3" class="tab-content">
+        <h2>Content for Tab 3</h2>
+        <p>This is Tab 3 content.</p>
+      </div>
+
+      <div id="tab4" class="tab-content">
+        <h2>Content for Tab 4</h2>
+        <p>This is Tab 4 content.</p>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+
+  </body>
+  
 </html>

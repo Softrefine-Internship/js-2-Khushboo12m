@@ -4,12 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      /* write CSS here */
-    </style>
+    <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
-  <script>
-    // write javascript here
-  </script>
+  <body>
+    <div class="main">
+      <div class="center">
+        <button class="open-button">Open Popup</button>
+      </div>
+
+      <div class="pop-up" id="popup">
+        <div class="container">
+          <div class="icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+          <div>
+          <div class="heading">Deactivate account</div>
+          <div class="content">
+            <p>Are you sure you want to Deactivate your account?All of your data will be permanently removed from our servers forever.This action can not be undone.</p>
+          </div>
+        </div>
+          <div class="buttons">
+            <button class="btn1" id="btn1">Cancel</button>
+            <button class="btn2" id="btn2">Deactivate</button>
+          </div>
+          <div class="close" id="closeBtn"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+      </div>
+    </div>
+
+  <script src="index.js"></script>
+  </body>
+
 </html>

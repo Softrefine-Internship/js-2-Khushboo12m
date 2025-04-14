@@ -4,12 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      /* write CSS here */
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
-  <script>
-    // write javascript here
-  </script>
+  <body>
+    <div class="main">
+      <div class="gradient gradient-1"></div>
+      <div class="gradient gradient-2"></div>
+      <div class="form-container">
+        <div class="header">
+        <div class="heading1">Contact Sales</div>
+        <div class="heading2">Lorem ipsum, dolor sit amet consectetur adipisicing elit</div>
+        </div>
+      </div>
+      <div class="form">
+        <form>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname">
+            </div>
+      
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname">
+            </div>
+          </div>
+      
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company">
+          </div>
+      
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <div class="phone-row combined-input">
+              <select id="country-code" name="country-code">
+                <option value="US">US</option>
+                <option value="Uk">Uk</option>
+                <option value="IN">IN</option>
+                <option value="FR">FR</option>
+              </select>
+              <input type="tel" id="phone" name="phone" placeholder="">
+            </div>
+          </div>
+      
+          <div class="form-group">
+            <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" cols="50"></textarea>
+          </div>
+
+          <div class="footer-text">by selecting this you are agree to our <a href="#">privacy policy</a></div>
+
+          <button type="submit">Let's talk</button>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
