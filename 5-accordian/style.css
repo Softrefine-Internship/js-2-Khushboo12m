@@ -17,11 +17,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* color: #2e75d1; */
   }
 
   .header-title {
-    color: #2e75d1;
+    color: black;
   }
   
 
@@ -59,8 +58,10 @@
 }
 
 
-
-
 .accordion-header i.fa-angle-up {
+  color: #2e75d1;
+}
+
+.accordion-header.active .header-title {
   color: #2e75d1;
 }

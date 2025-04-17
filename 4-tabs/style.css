@@ -17,11 +17,12 @@ body {
   background-color: white;
   border: none;
   outline: none;
-  color: grey;
+  color: #5a5757;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .tab-btn.active {
-  /* background-color: #333; */
   color: #007bff;
   border-bottom: 2px solid #007bff;
 
@@ -38,6 +39,10 @@ body {
   display: block;
 }
 
-h2,p{
-  color:#797474
+p{
+  color: #5a5757;
+}
+
+h2{
+  color: #030303;
 }

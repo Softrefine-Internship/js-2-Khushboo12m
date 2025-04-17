@@ -1,6 +1,5 @@
 const headers = document.querySelectorAll('.accordion-header');
 
-
 headers.forEach((header, index) => {
   header.addEventListener('click', () => {
     const content = header.nextElementSibling;
@@ -9,6 +8,12 @@ headers.forEach((header, index) => {
     document.querySelectorAll('.accordion-content').forEach(otherContent => {
       if (otherContent !== content) {
         otherContent.style.display = 'none';
+      }
+    });
+    
+    document.querySelectorAll('.accordion-header').forEach(otherHeader => {
+      if (otherHeader !== header) {
+        otherHeader.classList.remove('active');
       }
     });
 
@@ -21,10 +26,12 @@ headers.forEach((header, index) => {
 
     if (content.style.display === 'block') {
       content.style.display = 'none';
+      header.classList.remove('active');
       icon.classList.remove('fa-angle-up');
       icon.classList.add('fa-angle-down');
     } else {
       content.style.display = 'block';
+      header.classList.add('active');
       icon.classList.remove('fa-angle-down');
       icon.classList.add('fa-angle-up');
     }

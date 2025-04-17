@@ -1,6 +1,7 @@
 const links = document.querySelectorAll(".link");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
+const pageContent = document.getElementById("pageContent");
 
 let currentPage = 1;
 const totalPages = links.length;
@@ -11,6 +12,8 @@ function updatePagination() {
 
   prevBtn.disabled = currentPage === 1;
   nextBtn.disabled = currentPage === totalPages;
+
+  pageContent.innerText = `This is content for Page ${currentPage}.`;
 }
 
 links.forEach((link, index) => {

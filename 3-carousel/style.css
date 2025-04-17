@@ -47,7 +47,7 @@ button.prev, button.next {
   color: white;
   border: none;
   font-size: 24px;
-  padding: 10px;
+  padding: 16px;
   cursor: pointer;
   border-radius: 50%;
   z-index: 10;
