@@ -1,3 +1,44 @@
+function validateField(id, condition, errorMsg) {
+  const errorElement = document.getElementById(`${id}-error`);
+  if (condition) {
+    errorElement.innerText = "";
+    return true;
+  } else {
+    errorElement.innerText = errorMsg;
+    return false;
+  }
+}
+
+function attachInputListeners() {
+  document.getElementById("fname").addEventListener("input", () => {
+    validateField("fname", document.getElementById("fname").value.trim() !== "", "First name is required.");
+  });
+
+  document.getElementById("lname").addEventListener("input", () => {
+    validateField("lname", document.getElementById("lname").value.trim() !== "", "Last name is required.");
+  });
+
+  document.getElementById("company").addEventListener("input", () => {
+    validateField("company", document.getElementById("company").value.trim() !== "", "Company name is required.");
+  });
+
+  document.getElementById("email").addEventListener("input", () => {
+    validateField("email", document.getElementById("email").value.trim() !== "", "Email is required.");
+  });
+
+  document.getElementById("phone").addEventListener("input", () => {
+    validateField("phone", document.getElementById("phone").value.trim() !== "", "Phone number is required.");
+  });
+
+  document.getElementById("message").addEventListener("input", () => {
+    validateField("message", document.getElementById("message").value.trim() !== "", "Message is required.");
+  });
+
+  document.getElementById("toggle-switch").addEventListener("change", () => {
+    validateField("privacy", document.getElementById("toggle-switch").checked, "You must agree to the privacy policy.");
+  });
+}
+
 function validateForm() {
   let isValid = true;
 
@@ -51,3 +92,5 @@ function validateForm() {
 
   return isValid;
 }
+
+document.addEventListener("DOMContentLoaded", attachInputListeners);
